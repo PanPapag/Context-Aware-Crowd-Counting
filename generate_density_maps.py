@@ -1,16 +1,16 @@
 import argparse
+import glob
+import h5py
+import os
 
-import numpy as np
 import scipy
 import scipy.io as io
-from scipy.ndimage.filters import gaussian_filter
 import scipy.spatial
-import os
-import glob
+import numpy as np
+
 from matplotlib import pyplot as plt
-import h5py
-import PIL.Image as Image
-from matplotlib import cm as CM
+from scipy.ndimage.filters import gaussian_filter
+
 
 def make_args_parser():
     # create an ArgumentParser object
@@ -79,4 +79,3 @@ if __name__ == "__main__":
         no_people = mat["image_info"][0,0][0,0][0]
         density_map = gaussian_filter_density(img, no_people)
         np.save(img_path.replace('.jpg','.npy').replace('images','density_maps'), density_map)
-        break
