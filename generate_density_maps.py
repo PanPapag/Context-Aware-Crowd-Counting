@@ -71,8 +71,10 @@ if __name__ == "__main__":
     if not os.path.exists(part_A_test_density_map):
         os.mkdir(part_A_test_density_map)
 
-    for img_path in img_paths:
-        print("Generating density map for image: {}".format(img_path.split('/')[-1]))
+    for i, img_path in enumerate(img_paths):
+        if os.path.exists(img_path.replace('.jpg','.npy').replace('images','density_maps')):
+            continue
+        print("{} out of {} - Generating density map for image: {}".format(i+1, len(img_paths), img_path.split('/')[-1]))
         mat = io.loadmat(img_path.replace('.jpg','.mat').replace('images','ground-truth').replace('IMG_','GT_IMG_'))
         img = plt.imread(img_path)
         density_map = np.zeros((img.shape[0],img.shape[1]))
