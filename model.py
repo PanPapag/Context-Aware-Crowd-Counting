@@ -99,7 +99,7 @@ class CANNet(nn.Module):
                 nn.init.constant_(m.bias, 0)
 
 # Test code
-if __name__=="__main__":
+if __name__== "__main__":
     cannet = CANNet()
     print(cannet)
     input = torch.ones((1,3,256,256))

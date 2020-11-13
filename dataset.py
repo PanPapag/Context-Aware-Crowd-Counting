@@ -11,7 +11,7 @@ from torchvision import transforms
 
 
 class ShanghaiTechPartA(Dataset):
-    def __init__(self, root, shuffle=True, transform=None, downsample=1):
+    def __init__(self, root, shuffle=False, transform=None, downsample=1):
         self.root = root
         self.shuffle = shuffle
         self.transform = transform
