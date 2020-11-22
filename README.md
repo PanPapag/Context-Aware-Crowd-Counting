@@ -11,8 +11,10 @@ This is a simple and unofficial PyTorch implementation of the paper [Context-Awa
 2. Type ```git clone https://github.com/PanPapag/ZContext-Aware-Crowd-Counting.git``` 
    to clone the repository to your local machine
 3. Type ```pip install -r requirements.txt```
-4. Type ```python train.py --help ``` to view all arguments needed before training your model
+4. Type ```python train.py --help ``` to view all arguments needed before train your model
 5. Type ```python train.py ``` to train your model
+4. Type ```python test.py --help ``` to view all arguments needed before test your model
+5. Type ```python test.py ``` to test your model
 
 
 ## License
