@@ -6,6 +6,10 @@ This is a simple and unofficial PyTorch implementation of the paper [Context-Awa
 
 ![](https://github.com/PanPapag/Context-Aware-Crowd-Counting/blob/main/misc/model_architecture.png)
 
+## Download Links
+1. Kaggle: https://www.kaggle.com/tthien/shanghaitech
+2. Baidu Disk: http://pan.baidu.com/s/1nuAYslz
+
 ## How to use?
 1. Open the terminal
 2. Type ```git clone https://github.com/PanPapag/ZContext-Aware-Crowd-Counting.git``` 
