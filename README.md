@@ -4,4 +4,4 @@ This is a simple and unofficial PyTorch implementation of the paper [Context-Awa
 
 ## Context-Aware Network
 
-![]()
+![](https://github.com/PanPapag/Context-Aware-Crowd-Counting/blob/main/misc/model_architecture.png)
