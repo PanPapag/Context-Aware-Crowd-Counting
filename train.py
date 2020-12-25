@@ -54,8 +54,8 @@ if __name__== "__main__":
     seed = time.time()
     device = torch.device(args.device)
     torch.cuda.manual_seed(seed)
-    model = CANNet().to(args.device)
-    criterion = nn.MSELoss(size_average=False).to(args.device)
+    model = CANNet().to(device)
+    criterion = nn.MSELoss(size_average=False).to(device)
     optimizer = torch.optim.SGD(model.parameters(),args.learning_rate,
                                 momentum=args.momentum, weight_decay=0)
     print("Model loaded")
